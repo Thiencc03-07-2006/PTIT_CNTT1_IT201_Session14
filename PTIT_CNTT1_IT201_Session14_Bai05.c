@@ -76,6 +76,13 @@ void delete(Stack *s,int value) {
         current=current->next;
     }
 }
+void checkFirst(Stack *s) {
+    if (s->top==NULL) {
+        printf("Stack trong");
+        return;
+    }
+    printf("%d",s->top->data);
+}
 int main() {
     Stack* s = createStack();
     int n,value;
